@@ -1,7 +1,15 @@
 import { Component } from '@angular/core';
-
 import { products } from '../products';
 import { consoles } from '../products';
+
+var myObj = {
+    firstname: "Ignacio",
+    lastname: "Lira",
+    website: "La_Tiendita_del_Nachan.net"
+}
+window.localStorage.setItem("saved", JSON.stringify(myObj));
+
+var name = JSON.parse(window.localStorage.getItem("saved"));
 
 @Component({
   selector: 'app-product-list',
@@ -13,8 +21,13 @@ export class ProductListComponent {
   consoles = consoles;
   share() {
     window.alert('The product has been shared!');
+  };
+  uno(){
+      window.alert('Hola'); 
   }
 }
+
+    
 
 
 /*

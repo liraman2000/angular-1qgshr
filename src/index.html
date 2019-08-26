@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+        <script>
+            var example = angular.module("example", ["ngStorage"]);
+            example.controller("ExampleController", function($scope, $localStorage) {
+
+                $scope.save = function() {
+                    $localStorage.message = "Hello World";
+                }
+
+                $scope.load = function() {
+                    $scope.data = $localStorage.message;
+                }
+
+            });
+        </script>
   <head>
     <meta charset="utf-8" />
     <title>Angular Getting Started</title>
@@ -11,9 +25,13 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+        <script src="ngStorage.min.js"></script>
   </head>
-  <body>
-    <app-root></app-root>
+      <body>
+         <app-root></app-root>
+    </body>
+   
   </body>
 </html>
 

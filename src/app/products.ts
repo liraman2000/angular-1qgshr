@@ -1,6 +1,5 @@
 export const products = [
   {
-    
     name: 'Phone XL',
     price: 799,
     description: 'A large phone with one of the best screens'
@@ -20,17 +19,17 @@ export const consoles = [
   {
     name: 'Playstation',
     price: 399,
-    description: 'A large phone with one of the best screens'
+    description: 'The Console of SONY'
   },
   {
     name: 'Nintendo',
     price: 299,
-    description: 'A great phone with one of the best cameras'
+    description: 'The house of Mario'
   },
   {
     name: 'Xbox',
     price: 349,
-    description: ''
+    description: 'From Microsoft'
   }
 ];
 
